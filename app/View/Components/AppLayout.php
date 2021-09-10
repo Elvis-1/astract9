@@ -3,6 +3,7 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Models\User;
 
 class AppLayout extends Component
 {
@@ -13,6 +14,9 @@ class AppLayout extends Component
      */
     public function render()
     {
+        // return User::all();
         return view('layouts.app');
     }
+
+    
 }
